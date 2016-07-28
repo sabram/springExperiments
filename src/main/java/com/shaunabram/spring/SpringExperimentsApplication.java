@@ -15,4 +15,14 @@ public class SpringExperimentsApplication {
 	public String str() {
 		return "test";
 	}
+
+	@Bean
+	public Greeting mongoDB() {
+		return new Greeting("mongoDB");
+	}
+
+	@Bean
+	public Greeting mongoDBRead() {
+		return new Greeting("mongoDBRead");
+	}
 }
